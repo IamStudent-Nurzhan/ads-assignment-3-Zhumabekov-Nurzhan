@@ -1,0 +1,12 @@
+public class TestBST {
+    public static void main(String[] args) {
+        BST<Integer, String> tree = new BST<>();
+        tree.put(5, "Five");
+        tree.put(3, "Three");
+        tree.put(7, "Seven");
+
+        for (BST<Integer, String>.Node elem : tree.iterator()) {
+            System.out.println("key = " + elem.key + " and value = " + elem.val);
+        }
+    }
+}
